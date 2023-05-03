@@ -1,0 +1,47 @@
+1. express server (provides functionality to build web servers that can handle HTTP 
+requests and responses. So, in a way, you could say that Express is a server, 
+or at least a tool for building servers.) -yarn add express nodemon (nodemon to run the applic.)
+
+2. Uses mongoose with error handling to have try and catch error
+
+3. add - yarn add dotenv 
+
+
+-- React Query, Hook, stripe payment gate, MongoDB -- 
+
+api - server : yarn start
+client- client : npm run dev
+
+techno used: mongoDB, express, react Node, Stripe, mongoosejs, JWT
+
+
+
+mongoose - schemas
+         - connections, errorHandling
+cloudinary - files
+
+yarn add @tanstack/react-query
+	- mutations
+yarn add axios
+
+yarn add moment
+	- used for "1 hour ago, 2 hours ago, etc"
+yarn add dotenv
+	- to hide secret keys
+
+stripe - for payment
+https://stripe.com/docs/checkout/quickstart
+	- yarn add stripe (api/server)
+	- yarn add @stripe/react-stripe-js @stripe/stripe-js (client)
+
+https://www.pexels.com/
+	- where the slide images came from
+
+https://www.iconfinder.com/
+	- Explore marketplace page pictures 
+
+JWT - Authentication
+	- yarn add jsonwebtoken
+COOKIEPARSER - parsed cookie request
+	yarn add cookie-parser
+
