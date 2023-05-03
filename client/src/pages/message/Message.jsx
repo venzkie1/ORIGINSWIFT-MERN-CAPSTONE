@@ -71,7 +71,7 @@ const Message = () => {
     <div className="message">
       <div className="container">
         <span className="breadcrumbs">
-          <Link to="/messages">Messages</Link> {">"} {"<"}
+          <Link to="/messages">Messages</Link> {">"} Originswift {">"}
         </span>
         {isLoading ? (
           "loading"
