@@ -16,7 +16,13 @@ import helmet from "helmet";
 
 const app = express();
 
-app.use(helmet());
+app.use(helmet.contentSecurityPolicy({
+  directives: {
+    defaultSrc: ["'self'"],
+    scriptSrc: ["'self'", "'unsafe-inline'"]
+  }
+}));
+
 dotenv.config(); //enable process.env.MONGO
 mongoose.set('strictQuery', true);
 

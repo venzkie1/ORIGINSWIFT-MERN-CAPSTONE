@@ -48,9 +48,9 @@ function Navbar() {
           <Link className="link" to="/gigs?cat=design">
             <span>Browse Freelancer Projects</span>
           </Link>
-          <div class="dropdown">
-            <button class="dropbtn">Language</button>
-            <div class="dropdown-content">
+          <div className="dropdown">
+            <button className="dropbtn">Language</button>
+            <div className="dropdown-content">
               <a href="#">English</a>
               <a href="#">Filipino</a>
               <a href="#">French</a>
