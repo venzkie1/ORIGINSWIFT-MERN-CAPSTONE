@@ -6,6 +6,7 @@ import "./Navbar.scss";
 function Navbar() {
   const [active, setActive] = useState(false);
   const [open, setOpen] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
 
   const { pathname } = useLocation();
 
@@ -48,15 +49,18 @@ function Navbar() {
           <Link className="link" to="/gigs?cat=design">
             <span>Browse Freelancer Projects</span>
           </Link>
+          <a href="https://venzkie1.github.io/E-PORTFOLIO/" className="portfolio" target="_blank">View Developer's Portfolio</a>
           <div className="dropdown">
-            <button className="dropbtn">Language</button>
-            <div className="dropdown-content">
-              <a href="#">English</a>
-              <a href="#">Filipino</a>
-              <a href="#">French</a>
-              <a href="#">German</a>
-              <a href="#">Italian</a>
-            </div>
+            <button className="dropbtn" onClick={() => setDropdownOpen(!dropdownOpen)}>Language</button>
+            {dropdownOpen && ( // render dropdown content only if dropdownOpen is true
+              <div className="dropdown-content">
+                <a href="#">English</a>
+                <a href="#">Filipino</a>
+                <a href="#">French</a>
+                <a href="#">German</a>
+                <a href="#">Italian</a>
+              </div>
+            )}
           </div>
 
           {!currentUser?.isSeller && <span>Become a Seller</span>}

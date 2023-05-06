@@ -23,6 +23,11 @@
         color: black;
         font-weight: 500;
       }
+
+      .portfolio{
+        color: black;
+        font-weight: 500;
+      }
     }
   
     .container {
@@ -155,5 +160,10 @@
   
   .dropdown:hover .dropdown-content {
     display: block;
+  }
+  
+  .portfolio{
+    color: white;
+    text-decoration: none;
   }
   
