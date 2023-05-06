@@ -6,7 +6,7 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        main: 'client/src/main.jsx',
+        main: 'index.html',
       },
     },
   },
