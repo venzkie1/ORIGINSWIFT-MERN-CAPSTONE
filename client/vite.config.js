@@ -5,8 +5,8 @@ export default defineConfig({
   plugins: [react()],
   build: {
     rollupOptions: {
-      input: '/client/index.html',
+      input: 'client/index.html',
     },
   },
-  base: '/client/',
+  base: 'client',
 });
