@@ -3,22 +3,22 @@ import "./Featured.scss";
 import { useNavigate } from "react-router-dom";
 
 function Featured() {
-  const [input, setInput] = useState();
+  const [input, setInput] = useState("");
   const navigate = useNavigate();
 
-  const handleSubmit = ()=>{
-    const input = input.trim();
-    if (input) {
-    navigate(`/gigs?search=${input}`);
+  const handleSubmit = () => {
+    const trimmedInput = input.trim();
+    if (trimmedInput !== "") {
+      navigate(`/gigs?search=${trimmedInput}`);
     }
-  }
+  };
 
   const handleKeyDown = (e) => {
-    if (e.key === "Enter" && input.trim() !== "") {
+    if (e.key === "Enter") {
+      e.preventDefault();
       handleSubmit();
     }
   };
-  
 
   return (
     <div className="featured">
@@ -30,8 +30,19 @@ function Featured() {
           <div className="search">
             <div className="searchInput">
               <img src="./img/search.png" alt="" />
-              <input type="text" placeholder='e.g"Web Design"' value={input}  onChange={(e) => setInput(e.target.value)}
-                onKeyDown={handleKeyDown} />
+              <input
+                type="text"
+                placeholder='e.g "Web Design"'
+                value={input}
+                onChange={(e) => setInput(e.target.value)}
+                onKeyDown={handleKeyDown}
+                required
+                onInvalid={(e) =>
+                  e.target.setCustomValidity(
+                    "Please input a valid keyword before submitting!"
+                  )
+                }
+              />
             </div>
             <button onClick={handleSubmit}>Search</button>
           </div>
