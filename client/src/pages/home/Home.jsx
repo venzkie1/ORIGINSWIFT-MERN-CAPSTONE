@@ -20,38 +20,34 @@ function Home() {
       <div className="features">
         <div className="container">
           <div className="item">
-            <h1>A whole world of freelance talent at your fingertips</h1>
+            <h1>Access a world of freelance talent with just a few clicks.</h1>
             <div className="title">
               <img src="./img/check.png" alt="" />
-              The best for every budget
+              Premium services without the premium price tag
             </div>
             <p>
-              Find high-quality services at every price point. No hourly rates,
-              just project-based pricing.
+            Discover premium services at a range of price points, with transparent project-based pricing instead of hourly rates.
             </p>
             <div className="title">
               <img src="./img/check.png" alt="" />
-              Quality work done quickly
+              Deliver top-notch work with speed and efficiency.
             </div>
             <p>
-              Find the right freelancer to begin working on your project within
-              minutes.
+            Efficiently connect with the perfect freelancer for your project in a matter of minutes.
             </p>
             <div className="title">
               <img src="./img/check.png" alt="" />
-              Protected payments, every time
+              Guaranteed protected payments
             </div>
             <p>
-              Always know what you'll pay upfront. Your payment isn't released
-              until you approve the work.
+            Rest assured with transparent pricing. Your payment is held securely until you confirm satisfaction with the completed work.
             </p>
             <div className="title">
               <img src="./img/check.png" alt="" />
-              24/7 support
+              Access support anytime, day or night.
             </div>
             <p>
-              Find high-quality services at every price point. No hourly rates,
-              just project-based pricing.
+            Discover exceptional services tailored to your budget with transparent project-based pricing, no hourly rates.
             </p>
           </div>
           <div className="item">
@@ -61,7 +57,7 @@ function Home() {
       </div>
       <div className="explore">
         <div className="container">
-          <h1>Explore the marketplace</h1>
+          <h1>We've got what you need</h1>
           <div className="items">
             <div className="item">
               <img
@@ -154,25 +150,24 @@ function Home() {
               Origin Swift <i>business</i>
             </h1>
             <h1>
-              A business solution designed for <i>teams</i>
+              A solution built for<i>business</i>
             </h1>
             <p>
-              Upgrade to a curated experience packed with tools and benefits,
-              dedicated to businesses
+            Enhance your experience with curated tools and exclusive benefits tailored for businesses.
             </p>
             <div className="title">
               <img src="./img/check.png" alt="" />
-              Connect to freelancers with proven business experience
+              Connect with seasoned freelancers with a strong business acumen.
             </div>
 
             <div className="title">
               <img src="./img/check.png" alt="" />
-              Get matched with the perfect talent by a customer success manager
+              Match with top talent through a dedicated manager.
             </div>
 
             <div className="title">
               <img src="./img/check.png" alt="" />
-              Manage teamwork and boost productivity with one powerful workspace
+              Enhance team collaboration and productivity with a unified workspace.
             </div>
             <button>Explore Origin Swift Business</button>
           </div>
