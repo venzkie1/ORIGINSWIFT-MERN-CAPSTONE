@@ -7,16 +7,18 @@ function Featured() {
   const navigate = useNavigate();
 
   const handleSubmit = ()=>{
+    const input = input.trim();
     if (input) {
     navigate(`/gigs?search=${input}`);
     }
   }
 
-  const handleKeyDown = (e)=>{
-    if (e.key === 'Enter' && input !== ""){
+  const handleKeyDown = (e) => {
+    if (e.key === "Enter" && input.trim() !== "") {
       handleSubmit();
     }
   };
+  
 
   return (
     <div className="featured">
