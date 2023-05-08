@@ -7,19 +7,29 @@ function Featured() {
   const navigate = useNavigate();
 
   const handleSubmit = ()=>{
+    if (input) {
     navigate(`/gigs?search=${input}`);
+    }
   }
+
+  const handleKeyDown = (e)=>{
+    if (e.key === 'Enter' && input !== ""){
+      handleSubmit();
+    }
+  };
+
   return (
     <div className="featured">
       <div className="container">
         <div className="left">
           <h1>
-            Find the perfect <span>freelance</span> services for your business
+            Find the right <span>freelance</span> services for your business
           </h1>
           <div className="search">
             <div className="searchInput">
               <img src="./img/search.png" alt="" />
-              <input type="text" placeholder='e.g"Web Design"' onChange={e=>setInput(e.target.value)} />
+              <input type="text" placeholder='e.g"Web Design"' value={input}  onChange={(e) => setInput(e.target.value)}
+                onKeyDown={handleKeyDown} />
             </div>
             <button onClick={handleSubmit}>Search</button>
           </div>
