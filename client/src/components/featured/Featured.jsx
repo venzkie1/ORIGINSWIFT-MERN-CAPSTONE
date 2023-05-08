@@ -36,12 +36,6 @@ function Featured() {
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
                 onKeyDown={handleKeyDown}
-                required
-                onInvalid={(e) =>
-                  e.target.setCustomValidity(
-                    "Please input a valid keyword before submitting!"
-                  )
-                }
               />
             </div>
             <button onClick={handleSubmit}>Search</button>
