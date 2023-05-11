@@ -11,7 +11,5 @@
         "dest": "/server.js"
     }
     ],
-    "build": {
-        "maxDuration": 60
-    }
+    "maxDuration": 60
 }
