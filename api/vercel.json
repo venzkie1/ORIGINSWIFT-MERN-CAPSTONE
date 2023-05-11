@@ -1,5 +1,11 @@
 {
     "version": 2,
+    "functions": {
+        "api/controllers/**/*": {
+          "memory": 3008,
+          "maxDuration": 60
+        }
+    },
     "builds": [
       {
         "src": "./server.js",
@@ -11,13 +17,7 @@
         "src": "/(.*)",
         "dest": "/server.js"
       }
-    ],
-    "build": {
-      "env": {
-        "MY_VAR": "my-value"
-      },
-      "maxDuration": 60
-    }
+    ]
 }
   
   
