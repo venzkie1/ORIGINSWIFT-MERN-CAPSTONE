@@ -8,7 +8,6 @@ import conversationRoute from './routes/conversation.route.js';
 import messageRoute from './routes/message.route.js';
 import reviewRoute from './routes/review.route.js';
 import authRoute from './routes/auth.route.js';
-import healthCheckRoute from './routes/healthCheck.route.js';
 import cookieParser from 'cookie-parser';
 import cors from "cors";
 import helmet from "helmet";
@@ -39,7 +38,7 @@ console.log('connected to MongoDB');
 };
 
 app.use(cors({ 
-  origin:"https://originswift-mern-capstone-fullstack.vercel.app/", 
+  origin:"http://localhost:5173", 
   credentials: true 
 }));
 
@@ -55,7 +54,6 @@ app.use("/api/orders", orderRoute);
 app.use("/api/conversations", conversationRoute);
 app.use("/api/messages", messageRoute);
 app.use("/api/reviews", reviewRoute);
-app.use("/api/healthCheck", healthCheckRoute);
 
 app.use((err, req, res, next) => {
   const errorStatus = err.status || 500;  
