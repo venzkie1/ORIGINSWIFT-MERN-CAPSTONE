@@ -39,7 +39,7 @@ console.log('connected to MongoDB');
 };
 
 app.use(cors({ 
-  origin:"http://localhost:5173", 
+  origin:"https://originswift-mern-capstone-fullstack.vercel.app/", 
   credentials: true 
 }));
 
