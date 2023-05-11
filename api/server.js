@@ -54,6 +54,9 @@ app.use("/api/orders", orderRoute);
 app.use("/api/conversations", conversationRoute);
 app.use("/api/messages", messageRoute);
 app.use("/api/reviews", reviewRoute);
+app.use("/api/home", (req, res) => {
+  res.status(200).send('welcome to my originswift api');
+});
 
 app.use((err, req, res, next) => {
   const errorStatus = err.status || 500;  
