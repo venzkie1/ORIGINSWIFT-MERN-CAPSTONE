@@ -11,9 +11,7 @@
         "dest": "/server.js"
     }
     ],
-    "functions": {
-        "api/*": {
-          "maxDuration": 60
-        }
+    "build": {
+        "maxDuration": 60
     }
 }
